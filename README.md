@@ -1,11 +1,9 @@
 ---
-
 # My Homelab & Self-Hosting Guides
 
 This repository serves as a comprehensive documentation of my personal homelab setup and various self-hosted services. It's a living knowledge base detailing the architecture, configuration, and troubleshooting steps for the infrastructure I manage.
 
 This project showcases my hands-on experience in system administration, networking, containerization, security, and automation, reflecting a passion for building, maintaining, and optimizing IT environments.
-
 ---
 
 ## 🚀 What's Inside?
