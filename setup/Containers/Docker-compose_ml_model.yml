@@ -1,0 +1,19 @@
+# docker-compose.yml for running a ml container with Nvidia gpu passthrough.
+version: '3.8' 
+
+services:
+  ml_model_service:
+    build: . 
+    image: ml-model:latest  
+    container_name: ml-model-container 
+    
+    # --- GPU Config ---
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all 
+              capabilities: [gpu] 
+    ports:
+      - "5000:5000" # Host_Port:Container_Port
